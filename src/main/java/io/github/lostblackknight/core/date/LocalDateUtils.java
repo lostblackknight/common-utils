@@ -808,7 +808,7 @@ public abstract class LocalDateUtils extends BaseUtils {
      * @param localDate 日期
      * @return 格式化后的字符串
      */
-    public static String formatDate(LocalDate localDate) {
+    public static String format(LocalDate localDate) {
         return DateFormatter.NORMAL_DATE.format(localDate);
     }
 
@@ -819,7 +819,7 @@ public abstract class LocalDateUtils extends BaseUtils {
      * @param localDate 日期
      * @return 格式化后的字符串
      */
-    public static String formatDateOfSimple(LocalDate localDate) {
+    public static String formatOfSimple(LocalDate localDate) {
         return DateFormatter.SIMPLE_DATE.format(localDate);
     }
 
@@ -830,7 +830,7 @@ public abstract class LocalDateUtils extends BaseUtils {
      * @param localDate 日期
      * @return 格式化后的字符串
      */
-    public static String formatDateOfChinese(LocalDate localDate) {
+    public static String formatOfChinese(LocalDate localDate) {
         return DateFormatter.CHINESE_DATE.format(localDate);
     }
 
@@ -880,7 +880,7 @@ public abstract class LocalDateUtils extends BaseUtils {
      * @param text 文本
      * @return {@link LocalDate}
      */
-    public static LocalDate parseDate(CharSequence text) {
+    public static LocalDate parse(CharSequence text) {
         return DateParser.parseLocalDate(text, DateFormatter.NORMAL_DATE);
     }
 
@@ -891,7 +891,7 @@ public abstract class LocalDateUtils extends BaseUtils {
      * @param text 文本
      * @return {@link LocalDate}
      */
-    public static LocalDate parseDateOfSimple(CharSequence text) {
+    public static LocalDate parseOfSimple(CharSequence text) {
         return DateParser.parseLocalDate(text, DateFormatter.SIMPLE_DATE);
     }
 
@@ -902,7 +902,7 @@ public abstract class LocalDateUtils extends BaseUtils {
      * @param text 文本
      * @return {@link LocalDate}
      */
-    public static LocalDate parseDateOfChinese(CharSequence text) {
+    public static LocalDate parseOfChinese(CharSequence text) {
         return DateParser.parseLocalDate(text, DateFormatter.CHINESE_DATE);
     }
 

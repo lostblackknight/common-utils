@@ -489,13 +489,13 @@ class LocalDateUtilsTest {
 
     @Test
     void formatDateOfSimple() {
-        System.out.println(LocalDateUtils.formatDate(localDate));
-        System.out.println(LocalDateUtils.formatDateOfSimple(localDate));
+        System.out.println(LocalDateUtils.format(localDate));
+        System.out.println(LocalDateUtils.formatOfSimple(localDate));
     }
 
     @Test
     void formatDateOfChinese() {
-        System.out.println(LocalDateUtils.formatDateOfChinese(localDate));
+        System.out.println(LocalDateUtils.formatOfChinese(localDate));
     }
 
     @Test
@@ -515,17 +515,17 @@ class LocalDateUtilsTest {
 
     @Test
     void parseDate() {
-        System.out.println(LocalDateUtils.parseDate("2018-12-25"));
+        System.out.println(LocalDateUtils.parse("2018-12-25"));
     }
 
     @Test
     void parseDateOfSimple() {
-        System.out.println(LocalDateUtils.parseDateOfSimple("20181225"));
+        System.out.println(LocalDateUtils.parseOfSimple("20181225"));
     }
 
     @Test
     void parseDateOfChinese() {
-        System.out.println(LocalDateUtils.parseDateOfChinese("2018年12月25日"));
+        System.out.println(LocalDateUtils.parseOfChinese("2018年12月25日"));
     }
 
     @Test
