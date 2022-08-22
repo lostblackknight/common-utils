@@ -1165,7 +1165,7 @@ public abstract class LocalDateTimeUtils extends BaseUtils {
      * @return 两个日期是否是同一天
      */
     public static boolean isEqualDay(LocalDateTime first, LocalDateTime second) {
-        return LocalDate.from(first).equals(LocalDate.from(second));
+        return first.get(DAY_OF_MONTH) == second.get(DAY_OF_MONTH) && isEqualMonth(first, second);
     }
 
     /**
